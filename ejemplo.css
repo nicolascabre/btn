@@ -1,0 +1,27 @@
+.destacados{
+    color: blue;
+    font-size:50px;
+    margin-block: 5px;
+}
+
+#foto{
+    border-color:white;
+    border-width:40px;
+    border-style: dotted;
+    background-color: blue;
+    padding-top: 50px;
+    padding-left:600px;
+
+}
+.estilos{
+    color:yellow;
+    font-size:50px;
+    margin-block:5px;
+}
+
+#titulo{
+    font-size:50px;
+    color: white;
+    background-color: blue;
+    padding-left:600px;
+}
