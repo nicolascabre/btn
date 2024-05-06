@@ -55,7 +55,7 @@ aside {
 	nav li{
 		padding: 10px;
 	}
-	}
+	
 	section{
 		width: 100%;
 		border-bottom: 2px solid black;
@@ -77,5 +77,8 @@ aside {
 	}
 	aside p{
 		margin-left: 10px;
+	}
+	#contenedor{
+		width:100%;
 	}
 }

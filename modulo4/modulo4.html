@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="md4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body style="background-color: #97e6fa;">
+ <header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" class="navbar" style="background-color: #f3c41b;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">BTN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      servicios
+                    </a>
+                    <ul class="dropdown-menu" class="navbar" style="background-color: #e3aa0f;">
+                      <li><a class="dropdown-item" href="#">servicio 1</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">servicio 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">servicio 3</a></li>
+                    </ul>
+                  </li>
+                  
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+
+    </div>
+</header>
+ <section class="carrusel">
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/seed/picsum/1000/200" class="rounded mx-auto d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1000/200?grayscale" class="rounded mx-auto d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/237/1000/200" class="rounded mx-auto d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+ </section>
+<section>
+<div class="container">
+  <div id="columnas" class="container text-center">
+    <div class="row">
+      <div class="col align-self-start">
+        <h1>QUIENES SOMOS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique soluta officia nihil assumenda sit optio quos molestias esse sint nemo nostrum dolor eum voluptatibus facere, atque omnis nisi veritatis deleniti.</p>
+      </div>
+      <div class="col align-self-center">
+        <h2>DONDE ENCONTRARNOS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consectetur praesentium enim, officiis deserunt perspiciatis</p>
+      </div>
+      <div class="col align-self-end">
+        <h3>CONTACTO</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+ <section id="tema">
+ <div class="container">  
+  <div class="row">
+    <div class="col-4">
+      <h1 class="text-center">Temas principales</h1>
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">tema 1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">tema 2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">tema 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">tema 4</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <h4 id="list-item-1">tema 1</h4>
+        <p class="bg-success p-2" style="--bs-bg-opacity: .5;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ab consectetur quisquam quasi fugiat ad officia in repudiandae suscipit! Officiis commodi perspiciatis maiores expedita rem, placeat sed officia nesciunt at!</p>
+        <h4 id="list-item-2">tema 2</h4>
+        <p class="bg-success p-2" style="--bs-bg-opacity: .5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam alias qui libero obcaecati nobis aspernatur! Suscipit optio quibusdam dolorum voluptatem explicabo maxime similique ad reiciendis aperiam? Quo, porro necessitatibus.</p>
+        <h4 id="list-item-3">tema 3</h4>
+        <p class="bg-success p-2" style="--bs-bg-opacity: .5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim quisquam labore, rem iusto magni sequi maiores! Non error incidunt velit similique suscipit voluptatibus, repellendus earum eos dolorem, consequatur quidem!</p>
+        <h4 id="list-item-4">tema 4</h4>
+        <p class="bg-success p-2" style="--bs-bg-opacity: .5;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla aliquam numquam accusantium minus dolor, sint laudantium optio et. Molestiae illum doloribus placeat minima similique quis ex dolor nihil itaque tempore!</p>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>   
+<section class="container">
+  <div class="card text-bg-info mb-3" style="max-width: 28rem;">
+    <div class="card-header">Importante</div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+</section>   
+<form class="container">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+   
+   
+   
+   
+   
+   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
