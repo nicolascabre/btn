@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function MediodeTransporte(distancia) {
+    if (distancia >= 0 && distancia <= 1000) {
+        return "caminando";
+    } else if (distancia > 1000 && distancia <= 10000) {
+        return "bicicleta";
+    } else if (distancia > 10000 && distancia <= 30000) {
+        return "colectivo";
+    } else if (distancia > 30000 && distancia <= 100000) {
+        return "auto";
+    } else {
+        return "avion";
+    }
+}
+
+
+let distancia = 115000;
+let mediodeTransporte = MediodeTransporte(distancia);
+console.log("Para lqa distancia de " + distancia + " metros, el medio de transporte es: " + mediodeTransporte);
+
+
+function encontrarelMayor(array) {
+    if (array.length === 0) {
+        return 0; 
+    }
+    
+    let mayor = array[0]; 
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > mayor) {
+            mayor = array[i]; 
+        }
+    }
+    
+    return mayor;
+}
+
+
+let numeros = [ 17, 23, 43, 45, 56, 34, ];
+let resultado = encontrarelMayor(numeros);
+console.log("El número más grande es: " + resultado);    
+    
+</script>
+    
+</body>
+</html>
