@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="java.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuadrados CambiaColor</title>
+
+</head>
+<body>
+
+<div id="cuadrado1" class="cuadrado" onclick="cambiarColor(this)"></div>
+<div id="cuadrado2" class="cuadrado" onclick="cambiarColor(this)"></div>
+<div id="cuadrado3" class="cuadrado" onclick="cambiarColor(this)"></div>
+
+<script>
+        document.getElementById("cuadrado1").addEventListener("click", function() {
+        cambiarColorFondo("#ff0000");
+    });
+    
+    document.getElementById("cuadrado2").addEventListener("click", function() {
+        cambiarColorFondo("#00ff00");
+    });
+    
+    document.getElementById("cuadrado3").addEventListener("click", function() {
+        cambiarColorFondo("#0000ff");
+    });
+    
+    function cambiarColorFondo(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+
+</body>
+</html>

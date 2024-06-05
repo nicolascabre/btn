@@ -1,0 +1,23 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+#cuadrado1 {
+    background-color: red;
+}
+#cuadrado2 {
+    background-color: green;
+}
+#cuadrado3 {
+    background-color: blue;
+}
