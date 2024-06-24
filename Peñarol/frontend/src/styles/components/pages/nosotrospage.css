@@ -1,0 +1,49 @@
+.historia h2{
+    font-family: "Poetsen One", sans-serif;
+  }
+  .historicos h2{
+    font-family: "Poetsen One", sans-serif;
+  }
+  
+  .historia {
+    border: solid;
+    border-color: #000000;
+    padding: 50px;
+  }
+  .historia p {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 17px;
+  }
+  .historicos {
+    padding: 50px;
+  
+    justify-content: center;
+  }
+  .jugador {
+    display: flex;
+  }
+  .player {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border box;
+    background-color: #000000;
+  }
+  .player p {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    color: #ffe400;
+  }
+  .player img {
+  
+   border-radius: 5px;
+    width: 130px;
+    height: 130px;
+  }
+  .player img:hover{
+    transform:scale(1.15);
+  
+  }
