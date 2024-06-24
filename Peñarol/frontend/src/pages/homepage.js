@@ -6,7 +6,7 @@ const Homepage = (props) =>{
     return(
         <main class="holder">
         <div class="imgen" >
-          <img src="img/R.png" width="870" /> 
+          <img src="img/R.png" width="870" alt="logo" /> 
           </div>
         <div class="columnas">
           <div class="introduccion">
