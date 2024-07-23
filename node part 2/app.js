@@ -27,7 +27,7 @@ app.use(session({secret:"dfghdfhdeherernp",
 }));
 
 app.get("/", function(req, res){
-  var conocido = BooLean(req.session.nombre);
+  var conocido = Boolean(req.session.nombre);
 
   res.render("index", {title :"sesiones en express.js",
     conocido: conocido,
@@ -37,7 +37,7 @@ app.get("/", function(req, res){
 
 
 app.post("/ingresar", function(req, res){if (req.body.nombre){
-  req.session.nombre= req.body,nombre
+  req.session.nombre = req.body.nombre
 }
 res.redirect("/");
 });
