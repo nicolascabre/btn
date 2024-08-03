@@ -1,0 +1,21 @@
+
+
+<div class="conteiner">
+<form action ="admin/login" method="post"> 
+ <div class="row">
+  <div class="col-sm-10">
+    <input type="text" class="form-control" placeholder="usuario" aria-label="Usuario"
+    name="usuario" id="inputUser" >
+  </div>
+  <div class="col-sm-10">
+    <input type="password" class="form-control" placeholder="password" aria-label="Password" 
+    name="password" id="inputPassword" >
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+  </div>
+</form>
+{{#if error}}
+<p>Usuario y/o contraseña incorrecto</p>
+{{/if}}
+</div>

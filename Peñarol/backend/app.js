@@ -26,11 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/admin/login", loginrouter);
 
-var pool= require("./models/bd");
 
-pool.query("select * from empleados" ).then(function (resultados) {
-  console.log(resultados)
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
