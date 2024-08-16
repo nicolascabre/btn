@@ -6,10 +6,13 @@ var logger = require('morgan');
 
 require( "dotenv").config();
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var loginrouter = require("./routes/admin/login");
+var session = require("express-session");
 
+
+var indexrouter = require('./routes/index');
+var usersrouter = require('./routes/users');
+var loginrouter = require("./routes/admin/login");
+var adminrouter = require("./routes/admin/novedades");
 var app = express();
 
 // view engine setup
@@ -22,10 +25,35 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use("/admin/login", loginrouter);
 
+app.use(session({
+  secret:"peñarol1234",
+  cookie:{maxage:null},
+  resave: false,
+  saveUninitialized: true
+}))
+
+secured= async (req,res,next)=> {
+  try{
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario){
+      next();
+    }else{
+      res.redirect("/admin/login");
+    } 
+  }catch (error){
+    console.log(error)
+  }
+}
+
+
+
+
+
+app.use('/', indexrouter);
+app.use('/users', usersrouter);
+app.use("/admin/login", loginrouter);
+app.use("/admin/novedades",secured , adminrouter);
 
 
 // catch 404 and forward to error handler
