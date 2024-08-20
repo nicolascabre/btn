@@ -8,6 +8,7 @@ import Contactopage from "./pages/Contactopage";
 import Homepage from "./pages/Homepage";
 import Nosotrospage from "./pages/Nosotrospage";
 import Novedadespage from "./pages/Novedadespage";
+import Infrastructurapage from "./pages/Infrastructura";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path = "nosotros" element ={<Nosotrospage />}/>
           <Route path = "novedades" element ={<Novedadespage />}/>
           <Route path = "contacto" element ={<Contactopage />}/>
-
+          <Route path = "infrastructura" element ={<Infrastructurapage/>}/>
         </Routes>
      </BrowserRouter>
       

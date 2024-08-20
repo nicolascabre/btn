@@ -2,7 +2,7 @@ import React from "react";
 
 const novedadespage = (props) =>{
     return(
-        <div>novedadespage</div>
+        <p>ddsd</p>
     );
 }
 export default novedadespage;

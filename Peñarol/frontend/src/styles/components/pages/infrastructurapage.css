@@ -1,0 +1,37 @@
+.servicio {
+    background-color:#000000;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    gap: 32px;
+    align-items: center;
+  }
+  .servicio h2 {
+    color: #ffe400;
+    font-family: "Poetsen One", sans-serif;
+  }
+  .servicio .info p {
+    color: #ffe400;
+    padding: 15px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 13px;
+  }
+  .servicio img {
+    width:100%;
+    transition:all 300%;
+    position: relative;
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+  }
+  
+  .info{
+    display:flex;
+    
+  }
+  
+   .servicio:hover{
+    transform:scale(1.15);
+  }
