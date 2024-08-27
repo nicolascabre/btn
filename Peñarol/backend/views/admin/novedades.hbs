@@ -22,7 +22,7 @@
         <tr class="table-dark">
             <th scope="col">#</th>
             <th scope="col">Titulo</th>
-
+            <th>Imagen</th>
             <th class="text-end">Acciones</th>
         </tr>
     </thead>
@@ -32,6 +32,7 @@
         <tr>
             <th scope="row">{{id}}</th>
             <td>{{titulo}}</td>
+            <td>{{{imagen}}}</td>
             <td class="text-end">
                 <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}">Editar<i class="Editar" aria-hidden="true"></i></a>
                 <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}">Eliminar<i class="Eliminar" aria-hidden="true"></i></a>
