@@ -18,7 +18,7 @@ var indexrouter = require('./routes/index');
 var usersrouter = require('./routes/users');
 var loginrouter = require("./routes/admin/login");
 var adminrouter = require("./routes/admin/novedades");
-var apirouter = require("./routes/api");
+var apiRouter = require("./routes/api");
 var app = express();
 
 // view engine setup
@@ -65,7 +65,7 @@ app.use('/', indexrouter);
 app.use('/users', usersrouter);
 app.use("/admin/login", loginrouter);
 app.use("/admin/novedades",secured , adminrouter);
-app.use("/api",cors() , adminrouter)
+app.use("/api",cors() , apiRouter)
 
 
 // catch 404 and forward to error handler

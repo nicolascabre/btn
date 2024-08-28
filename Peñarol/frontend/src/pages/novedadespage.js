@@ -24,7 +24,7 @@ const Novedadespage = (props) => {
             key={item.id}
             title={item.titulo}
             subtitle={item.subtitulo}
-            iamgen={item.imagen}
+            imagen={item.imagen}
             body={item.cuerpo}
           />)
       )
